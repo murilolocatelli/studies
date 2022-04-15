@@ -1,0 +1,38 @@
+{
+    "apiVersion": "extensions/v1beta1",
+    "kind": "Ingress",
+    "metadata": {
+        "name": "api-ing"
+    },
+    "spec": {
+        "rules": [
+            {
+                "host": "minhaapi.info",
+                "http": {
+                    "paths": [
+                        {
+                            "path": "/teste",
+                            "backend": {
+                                "serviceName": "api-pod-service",
+                                "servicePort": 8085
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "host": "minhaapi.info.192.168.99.100.nip.io",
+                "http": {
+                    "paths": [
+                        {
+                            "backend": {
+                                "serviceName": "api-pod-service",
+                                "servicePort": 8085
+                            }
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}

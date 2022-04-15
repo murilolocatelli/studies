@@ -1,0 +1,223 @@
+.a {
+    padding: 10px;
+    margin: 0 auto;
+    width: 940px;
+}
+
+.a p {
+    background-color: LimeGreen;
+    clear: both;
+}
+
+.a span {
+    background-color: LightBlue;
+    display: inline-block;
+}
+
+.a h2 {
+    float: left;
+    margin: 0 20px 20px 0;
+}
+
+.a h4 {
+    margin-top: 5px;
+}
+
+.b {
+    padding: 10px;
+    margin: 0 auto;
+    width: 940px;
+}
+
+.b {
+    width: 960px;
+    margin: auto;
+}
+
+.b img {
+    height: 100px;
+    float: left;
+    margin-right: 10px;
+}
+
+.c {
+    padding: 10px;
+    margin: 0 auto;
+    width: 940px;
+    background-color: #E8E8E8;
+}
+
+.c .posts {
+    width: 600px;
+}
+
+.c h1 {
+    float: left;
+    margin: 0 0 20px;
+}
+
+.c .timestamp {
+    background-color: #000;
+    color: #FFF;
+    float: right;
+    font-size: 0.9em;
+    margin-top: 10px;
+    padding: 5px 10px;
+}
+
+.c p {
+    clear: both;
+}
+
+.c .posts {
+    float: left;
+    width: 600px;
+}
+
+.c aside {
+    background-color: #FFFBE4;
+    border: 1px solid #C9BC8F;
+    float: right;
+    padding: 10px;
+    width: 200px;
+}
+
+.c aside h3 {
+    margin: 0;
+}
+
+.clearfix::before, .clearfix::after {
+    content: "";
+    display: table;
+}
+
+.clearfix::after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+.d {
+    padding: 10px;
+    margin: 0 auto;
+    width: 940px;
+}
+
+.d .box {
+    background-color: PapayaWhip;
+    height: 100px;
+    width: 100px;
+    position: relative;
+    top: 30px;
+    left: 5px;
+}
+
+.d h1 {
+    background-color: LightBlue;
+    position: absolute;
+    top: 20px;
+    left: 30px;
+}
+
+.d header {
+    margin-top: 30px;
+    position: relative;
+}
+
+.e {
+    margin: 0 auto;
+    width: 940px;
+}
+
+.e .notice {
+    background-color: #FFF;
+    border: 1px solid #000;
+    height: 130px;
+    padding: 10px;
+    width: 380px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin: -75px 0 0 -200px;
+    z-index: 1;
+    display: none;
+}
+
+.e .notice .close {
+    background-color: #FF1A2D;
+    color: #FFF;
+    padding: 5px;
+    position: absolute;
+    right: -25px;
+    top: -12px;
+}
+
+.e .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.g {
+    margin: 0 auto;
+    width: 940px;
+}
+
+.g p {
+    column-count: 3;
+    column-gap: 10px;
+    column-rule: 1px solid #666;
+    font-size: 0.9em;
+    width: 500px;
+}
+
+.h {
+    margin: 0 auto;
+    width: 940px;
+}
+
+.h .flexbox {
+    /*
+    De acordo com a nova especificação, o valor "flexbox"
+    deverá ser substituído por apenas "flex".
+    */
+    display: flex;
+    height: 60px;
+    width: 300px;
+}
+
+.h .box {
+    color: #FFF;
+    display: block;
+    flex: auto;
+    font-weight: bold;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.h .one {
+    background-color: #8820DD;
+}
+
+.h .two {
+    background-color: #2BB15A;
+}
+
+.h .three {
+    background-color: #755322;
+}
+
+.h .four {
+    background-color: #02A3A3;
+}
+
+.h .five {
+    background-color: #C6363D;
+}

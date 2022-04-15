@@ -1,0 +1,14 @@
+node_modules
+package-lock.json
+
+target
+.idea
+*.iml
+
+.classpath
+.factorypath
+.project
+.settings/
+.vscode/
+
+.env

@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang='pt-BR'>
+  <head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <link href='http://fonts.googleapis.com/css?family=Press+Start+2P' rel='stylesheet'>
+    <script src="prefixfree.min.js"></script>
+  </head>
+  <body>
+   
+    <div class="a">
+      <h1>Melhores times do Brasil</h1>
+      <ul>
+      <li>
+      <img src='images/spfc.png' alt='São Paulo'>
+      <span>São Paulo</span>
+      </li>
+      <li>
+      <img src='images/santos.png' alt='Santos'>
+      <span>Santos</span>
+      </li>
+      <li>
+      <img src='images/inter.png' alt='Inter'>
+      <span>Inter</span>
+      </li>
+      <li>
+      <img src='images/cruzeiro.png' alt='Cruzeiro'>
+      <span>Cruzeiro</span>
+      </li>
+      </ul>
+    </div>
+
+    <br><br><br><br><br><br><br><br><br><br><br>
+
+    <div class="b">
+      <div class='container'>
+        <div class='card'>
+          <section class='signup'>
+            <form>
+            <h2>Cadastre-se agora!</h2>
+            <p>
+            <label for="account_email">E-mail</label>
+            <input type='email' id="account_email">
+            </p>
+            <p>
+            <label for="account_password">Senha</label>
+            <input type='password' id="account_password">
+            </p>
+            <p>
+            <label for="account_password_confirmation">
+            Confirme a sua senha
+            </label>
+            <input type='password' id="account_password_confirmation">
+            </p>
+            <p><button>Enviar!</button></p>
+            <a href='javascript:;' class='toggle'>Já estou cadastrado no site</a>
+            </form>
+          </section>
+          <section class='signin'>
+            <form>
+            <h2>Entrar no site</h2>
+            <p>
+            <label for="user_email">E-mail</label>
+            <input type='email' id="user_email">
+            </p>
+            <p>
+            <label for="user_password">Senha</label>
+            <input type='password' id="user_password">
+            </p>
+            <p>
+            <button>Enviar!</button>
+            </p>
+            <a href='javascript:;' class='toggle'>Quero me cadastrar</a>
+            </form>
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <div class='c'>
+      <h1>Bem vindo!</h1>
+
+      <span class='loading' title='Carregando...'>Carregando...</span>
+    </div>
+    
+    <script src="jquery.min.js"></script>
+
+    <script>
+      jQuery(function($) {
+        $('section').on('click', 'a', function() {
+          $('.card').toggleClass('flipped');
+        })
+      });
+    </script>
+  </body>
+</html>

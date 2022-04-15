@@ -1,0 +1,23 @@
+version: "3"
+
+services:
+  mysql:
+    image: mysql/mysql-server:5.7
+    hostname: test-mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_USER: test-mysql
+      MYSQL_PASSWORD: test-mysql
+      MYSQL_DATABASE: test-mysql
+    ports:
+      - "3306:3306"
+
+  nifi:
+    image: apache/nifi:latest
+    hostname: nifi
+    depends_on:
+      - mysql
+    volumes:
+      - "./mysql-connector-java-8.0.23.jar:/opt/nifi/nifi-current/lib/mysql-connector-java-8.0.23.jar"
+    ports:
+      - '8080:8080'

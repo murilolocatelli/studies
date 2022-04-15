@@ -1,0 +1,27 @@
+version: "3"
+
+services:
+  rabbit1:
+    image: rabbitmq:3-management
+    hostname: rabbit1
+    ports:
+      - "5671:5672"
+      - "15671:15672"
+
+  rabbit2:
+    image: rabbitmq:3-management
+    hostname: rabbit2
+    depends_on:
+      - rabbit1
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    
+  rabbit3:
+    image: rabbitmq:3-management
+    hostname: rabbit3
+    depends_on:
+      - rabbit1
+    ports:
+      - "5673:5672"
+      - "15673:15672"

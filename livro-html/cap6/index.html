@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang='pt-BR'>
+  <head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <link href='http://fonts.googleapis.com/css?family=Press+Start+2P' rel='stylesheet'>
+    <script src="prefixfree.min.js"></script>
+  </head>
+  <body>
+   
+    <div class="a">
+      <span>inline</span>
+      <span>inline</span>
+      <p>block</p>
+
+      <span>inline-block</span>
+      <span>inline-block</span>
+      <span>inline-block</span>
+      <br>
+      <span>inline-block</span><span>inline-block</span>
+
+      <br>
+      <br>
+
+      <h2>#1</h2>
+      <h4>500 pontos</h4>
+      <p>Prêmio para o campeão: 1 MacBook Pro 15".</p>
+    </div>
+
+    <div class="b">
+      <h3>How I Met Your Mother</h3>
+      <img src="images/himym.jpg">
+      <p>
+      A série gira em torno da vida de Ted Mosby e dos seus amigos,
+      que é narrada pelo próprio aos seus filhos, 25 anos mais tarde.
+      Bob Saget, como Ted Mosby do futuro, conta então aos filhos as
+      histórias e peripécias que o levaram a conhecer a mãe deles.
+      As outras personagens principais são Marshall Eriksen,
+      Robin Scherbatsky, Lily Aldrin e Barney Stinson.
+      </p>
+      <p>
+      Em 2005, aos 27 anos, o jovem Ted Mosby (Josh Radnor), após o
+      seu melhor amigo, Marshall Eriksen (Jason Segel), ficar noivo,
+      decide finalmente ir em busca da sua cara-metade. Com gestos
+      românticos questionáveis, Ted conhece Robin Scherbatsky
+      (Cobie Smulders), no bar que costumavam frequentar,
+      Maclaren's Pub.
+      </p>
+    </div>
+
+    <div class="c clearfix">
+      <section class='posts'>
+        <article>
+          <h1><a href='#'>Título do post #1</a></h1>
+          <span class='timestamp'>3 semanas atrás</span>
+          <p>
+          Uma breve descrição sobre o assunto abordado no post número 1...
+          </p>
+        </article>
+        <article>
+          <h1><a href='#'>Título do post #2</a></h1>
+          <span class='timestamp'>3 semanas atrás</span>
+          <p>
+          Uma breve descrição sobre o assunto abordado no post número 2...
+          </p>
+        </article>
+      </section>
+      <aside>
+        <h3>Veja outros posts</h3>
+        <ol>
+          <li><a href="#">Post #3</a></li>
+          <li><a href="#">Post #4</a></li>
+          <li><a href="#">Post #5</a></li>
+          <li><a href="#">Post #6</a></li>
+        </ol>
+      </aside>
+    </div>
+
+    <div class='d'>
+      <div class='box'>
+        Teste
+      </div>
+      <p>Um parágrafo de texto logo abaixo</p>
+
+      <header>
+        <h1>Posicionado com "absolute"</h1>
+      </header>
+    </div>
+
+    <br><br><br><br><br><br><br><br>
+
+    <div class='e'>
+      <div class='notice'>
+        <h1>Atenção</h1>
+        <p>Aqui você pode exibir alguma mensagem importante, que ela irá sobrepor todo o conteúdo do seu site.</p>
+        <a href='javascript:;' class='close'>Fechar</a>
+      </div>
+      <div class='overlay'></div>
+      <a id='show-modal' href='javascript:;'>Exibir modal</a>
+    </div>
+
+    <div class="f">
+        <article class='column six-columns'>
+        <!-- Conteúdo principal... -->
+        </article>
+        <aside class='column three-columns'>
+        <!-- links de navegação -->
+        </aside>
+    </div>
+
+    <div class="g">
+      <p>
+        Firefly é uma série de ficção científica criada pelo escritor/diretor
+        Joss Whedon, criador de Buffy: A Caça Vampiros, Angel e Dollhouse,
+        com sua companhia de produção Mutant Enemy Productions. Seu ambiente
+        futurista naturalista, modelado a partir de temas dos filmes de Western
+        tradicionais, apresenta um cenário de ficção científica atípico para a
+        narrativa. Whedon também trabalhou como produtor executivo,
+        junto com Tim Minear.
+      </p>
+    </div>
+
+    <div class="h">
+      <div class='flexbox'>
+        <span class='one box'>1</span>
+        <span class='two box'>2</span>
+        <span class='three box'>3</span>
+        <span class='four box'>4</span>
+        <span class='five box'>5</span>
+      </div>
+    </div>
+    
+    <script src="jquery.min.js"></script>
+    <script>
+      $('#show-modal').on('click', function() {
+        $('.overlay, .notice').show();
+      });
+
+      $('.overlay, .close').on('click', function() {
+        $('.overlay, .notice').hide();
+      });
+    </script>
+  </body>
+</html>
